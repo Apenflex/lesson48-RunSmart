@@ -1,0 +1,36 @@
+.carousel
+    padding: 81px 0
+    // .slick-dots
+    //     display: flex
+    //     justify-content: center
+    &__inner
+        position: relative
+        width: 750px
+        margin: 0 auto
+    .slick-prev, .slick-next
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: -66px
+        border: none
+        background-color: #fff
+        img
+            width: 31px
+            height: 50px
+    .slick-next
+        right: -66px
+        left: auto
+.slick-dots
+    list-style: none
+    display: flex
+    justify-content: center
+    li
+        margin-right: 5px
+    #slick-slide-control00, #slick-slide-control01, #slick-slide-control02
+        content-visibility: hidden
+        width: 25px
+        height: 25px
+        border-radius: 100%
+        border-style: none
+        background-color: grey
+        
