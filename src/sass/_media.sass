@@ -1,9 +1,16 @@
 @media (max-width: 1200px)
+    .container
+        max-width: 880px
+    .title
+        font-size: 28px
+    .header
+        &__phone
+            font-size: 17px
+        img
+            width: 95%
     .promo
         min-height: 600px
         padding: 18px 0 60px 0
-        .container
-            max-width: 880px
         &__wrapper
             margin-top: 88px
             h1
@@ -21,31 +28,46 @@
             margin-top: 17px
     .button_main
         width: 270px
-    .header
-        &__phone
-            font-size: 17px
-        img
-            width: 95%
     .advantages
         min-height: 470px
         padding: 60px 0 60px 0
-        .container
-            max-width: 880px
         &__wrapper
             margin-top: 63px
-    .title
-        font-size: 28px
     .consultation
         min-height: 640px
         padding: 90px 0 82px 0
-        .container
-            max-width: 877px
+    .catalog-item
+        width: 285px
+    .modal
+        width: 360px
+        padding: 35px 33px 38px 33px
+        &__subtitle
+            font-size: 18px
+    
 @media (max-width: 991px)
+    .container
+        max-width: 690px
+    .title
+        font-size: 25px
+    .header
+        &__logo
+            width: 220px
+            img
+                width: 85%
+        &__official
+            padding-right: 40px
+            font-size: 11px
+            span
+                font-size: 17px
+        &__phone
+            font-size: 13px
+        button
+            width: 120px
+            height: 27px
+            font-size: 11px
     .promo
         min-height: 500px
         padding: 18px 0 40px 0
-        .container
-            max-width: 690px
         &__wrapper
             margin-top: 80px
             h1
@@ -66,27 +88,9 @@
             height: 45px
             font-size: 14px
             margin-top: 63px
-    .header
-        &__logo
-            width: 220px
-            img
-                width: 85%
-        &__official
-            padding-right: 40px
-            font-size: 11px
-            span
-                font-size: 17px
-        &__phone
-            font-size: 13px
-        button
-            width: 120px
-            height: 27px
-            font-size: 11px
     .advantages
         min-height: 445px
         padding: 48px 0 55px 0
-        .container
-            max-width: 690px
         &__item
             width: 215px
             img
@@ -100,13 +104,9 @@
             margin-top: 20px
             font-size: 13px
             padding: 0 5px
-    .title
-            font-size: 25px
     .consultation
         min-height: 560px
         padding: 80px 0 62px 0
-        .container
-            max-width: 677px
         &__descr
             font-size: 20px
         .feed-form 
@@ -114,12 +114,63 @@
                 height: 45px
             &_submit
                 height: 55px
+    .catalog
+        padding-bottom: 85px
+        &__tabs
+            margin-top: 60px
+        &-item
+            width: 320px
+    .carousel__inner
+        width: 690px
+    .feed
+        &__item
+            margin-top: 90px
+            &:nth-child(2)
+                margin-top: 65px
+        &__img
+            width: 160px
+            height: 160px
+    .footer
+        &__info
+            width: 380px
+            height: 230px
+            padding: 25px 48px 45px 48px
+        &__addr
+            font-size: 17px
+            line-height: 17px
+        &__phone
+            font-size: 18px
+            line-height: 18px
+        &__social-icon
+            width: 48px
+            height: 48px
+            img
+                height: 24px
+    .modal
+        width: 300px
+        min-height: 370px
+        padding: 33px 28px 35px 28px
+        &__subtitle
+            font-size: 15px
+        &__descr
+            font-size: 12px
+    .feed-form
+        &_modal
+            width: 245px
+            input
+                height: 45px
+            button
+                font-size: 15px
+                height: 52px
+
 @media (max-width: 767px)
+    .container
+        max-width: 520px
+    .title
+        font-size: 23px
     .promo
         min-height: 400px
         padding: 18px 0 30px 0
-        .container
-            max-width: 520px
         .header__logo
             img
                 width: 80%
@@ -138,8 +189,6 @@
                 font-size: 9px
         &__wrapper
             margin-top: 75px
-            h1
-                font-size: 24px
         &__subheader
             font-size: 13px
             line-height: 0
@@ -159,5 +208,212 @@
             height: 38px
             font-size: 12px
             margin-top: 50px
+    .advantages
+        &__subtitle
+            font-size: 15px
+        &__descr
+            font-size: 12px
+    .feed-form
+        width: 260px
+    .catalog
+        padding-bottom: 75px
+        &__content
+            justify-content: center
+        &__tab
+            font-size: 16px
+        &-item
+            width: 360px
+    .carousel__inner
+        width: 520px
+        .slick-slide
+            img
+                margin: 0 auto
+                width: 75%
+    .feed
+        &__item
+            margin-top: 70px
+            &:nth-child(2)
+                margin-top: 55px
+        &__img
+            width: 120px
+            height: 120px
+        &__text
+            padding-right: 10px
+        &__subtitle
+            font-size: 17px
+        &__count
+            font-size: 13px
+        &__descr
+            font-size: 15px
+    .footer
+        &__info
+            width: 300px
+            height: 200px
+            padding: 25px 28px 45px 28px
+        &__addr
+            font-size: 15px
+            line-height: 15px
+        &__phone
+            font-size: 16px
+            line-height: 16px
+        &__social-icon
+            width: 43px
+            height: 43px
+            img
+                height: 21px
+    .modal
+        width: 250px
+        min-height: 320px
+        padding: 27px 20px 29px 20px
+        &__subtitle
+            font-size: 13px
+        &__descr
+            font-size: 10px
+        &__close
+            font-size: 35px
+            right: -35px
+            line-height: 17px
+    .feed-form
+        &_modal
+            width: 210px
+            input
+                height: 35px
+            button
+                font-size: 13px
+                height: 45px
+
 @media (max-width: 575px)
+    .container
+        max-width: 375px
+    .title
+        font-size: 20px
     .promo
+        padding: 15px 0 30px 0
+        .header
+            &__logo
+                width: 250px
+            img
+                width: 90%
+            &__official
+                width: 330px
+                margin-right: 12px
+            &__phone
+                font-size: 10px
+            button
+                width: 95px
+                height: 23px
+        &__wrapper
+            align-items: center
+            margin-top: 60px
+            h1
+                font-size: 20px
+                line-height: 20px
+        &__subheader
+            font-size: 10px
+        &__icons
+            width: 310px
+            margin-top: 50px
+        .icon
+            img
+                width: 0
+    .advantages
+        &__wrapper
+            flex-direction: column
+            align-items: center
+        &__item
+            width: 335px
+            &:nth-child(2)
+                margin: 10px 0
+        &__subtitle
+            margin-top: 10px
+        &__descr
+            text-align: center
+            margin-top: 13px
+    .consultation
+        min-height: 400px
+        padding: 40px 0 62px 0
+        .title
+            font-size: 17px
+        &__descr
+            font-size: 15px
+        .feed-form
+            align-items: center
+            width: 215px
+            input
+                height: 33px
+            button
+                height: 42px
+                font-size: 13px
+    .carousel
+        &__inner
+            width: 375px
+            .slick-slide
+                img
+                    width: 70%
+    .catalog
+        &__tabs
+            margin-top: 45px
+        &__tab
+            width: 100px
+            height: 45px
+            font-size: 10px
+        &__content
+            margin-top: 50px
+        &-item
+            width: 345px
+            &__old-price
+                font-size: 13px
+            &__price
+                font-size: 18px
+            button
+                width: 125px
+                height: 38px
+    .feed
+        &__item
+            margin-top: 60px
+            padding-left: 10px
+            &:nth-child(2)
+                margin-top: 45px
+        img
+            width: 100px
+            height: 100px
+        &__text
+            margin-left: 46px
+    .footer
+        &__info
+            width: 260px
+            height: 160px
+            padding: 19px 18px 15px 18px
+        &__addr
+            font-size: 11px
+            line-height: 11px
+            margin-bottom: 28px
+        &__phone
+            font-size: 12px
+            line-height: 12px
+            margin-bottom: 29px
+        &__social-icon
+            width: 35px
+            height: 35px
+            img
+                height: 14px
+    .modal
+        width: 200px
+        min-height: 250px
+        padding: 19px 9px 20px 9px
+        &__subtitle
+            font-size: 11px
+        &__descr
+            font-size: 9px
+        &__close
+            font-size: 28px
+            right: -27px
+            line-height: 14px
+    .feed-form
+        &_modal
+            width: 181px
+            input
+                height: 25px
+            button
+                font-size: 11px
+                height: 33px

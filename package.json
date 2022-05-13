@@ -26,10 +26,6 @@
     "gulp-sass": "^5.1.0",
     "sass": "^1.50.1"
   },
-  "dependencies": {
-    "lodash": "^4.17.21",
-    "resolve": "^1.22.0"
-  },
   "browserslist": [
     "last 1 version",
     "> 1%",
