@@ -51,5 +51,52 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('slow');
         })
     });
+    ////////Validate Form
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Будь-ласка введіть своє ім'я",
+                phone: "Будь-ласка введіть свій телефон",
+                email: {
+                  required: "Будь-ласка введіть свою пошту",
+                  email: "Невірно введено адрес електронної пошти"
+                }
+            }
+        });
+    };
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
+    /////Mask Phone
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
 
+    /////php mailer
+    $('form').submit(function(e) {
+        e.preventDefault();
+
+        if (!$(this).valid()) {
+            return;
+        }
+        
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 });
